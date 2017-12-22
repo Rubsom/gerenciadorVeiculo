@@ -24,7 +24,6 @@ public class Cliente {
     public String getEndereco() {
         return endereco;
     }
-
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
@@ -34,9 +33,10 @@ public class Cliente {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    public void imprimeLocatario(){
-        //System.out.println("Nome: "+ nome + "\n"+ "CPF: " + cpf + "\n" + "Endereço: " + endereco + "\n" +  "Telefone: " + telefone);
-        JOptionPane.showMessageDialog(null,"Nome: "+ nome + "Telefone: " + telefone + "\n"+ "CPF: " + cpf + "\n" + "Endereço: " + endereco + "\n");
 
+    public void imprimeLocatario(){
+        JOptionPane.showMessageDialog(null,"Nome: "+ nome + "\n"
+                + "CPF: " + cpf + "\n" + "Endereço: " + endereco + "\n" + "Telefone: "
+                + telefone + "\n");
     }
 }
